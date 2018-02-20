@@ -42,6 +42,10 @@ from .exception_retry_request import (  # noqa: F401
     http_retry_request_middleware
 )
 
+from .geth_poa import (  # noqa: F401
+    geth_poa_compatibility,
+)
+
 
 def combine_middlewares(middlewares, web3, provider_request_fn):
     """
